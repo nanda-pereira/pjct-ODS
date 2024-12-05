@@ -1,0 +1,401 @@
+/* cofigurações gerais */
+html {
+  scroll-behavior: smooth;
+}
+/* fonte que se será utilizada */
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/montserrat-regular.ttf") format("truetype");
+  font-weight: normal;
+}
+/* configurações da cores personalizadas como variaveis para utilizar posteriormente */
+:root {
+  --ods1: #e5243b; /* ODS 1 */
+  --ods2: #dda63a; /* ODS 2 */
+  --ods3: #4c9f38; /* ODS 3 */
+  --ods4: #c5192d; /* ODS 4 */
+  --ods5: #ff3a21; /* ODS 5 */
+  --ods6: #26bde2; /* ODS 6 */
+  --ods7: #fcc30b; /* ODS 7 */
+  --ods8: #a21942; /* ODS 8 */
+  --ods9: #fd6925; /* ODS 9 */
+  --ods10: #dd1367; /* ODS 10 */
+  --ods11: #fd9d24; /* ODS 11 */
+  --ods12: #bf8b2e; /* ODS 12 */
+  --ods13: #3f7e44; /* ODS 13 */
+  --ods14: #0a97d9; /* ODS 14 */
+  --ods15: #56c02b; /* ODS 15 */
+  --ods16: #00689d; /* ODS 16 */
+  --ods17: #19486a; /* ODS 17 */
+}
+
+/* Cores das ODS  */
+.ods1 {
+  background-color: var(--ods1);
+}
+.ods2 {
+  background-color: var(--ods2);
+}
+.ods3 {
+  background-color: var(--ods3);
+}
+.ods4 {
+  background-color: var(--ods4);
+}
+.ods5 {
+  background-color: var(--ods5);
+}
+.ods6 {
+  background-color: var(--ods6);
+}
+.ods7 {
+  background-color: var(--ods7);
+}
+.ods8 {
+  background-color: var(--ods8);
+}
+.ods9 {
+  background-color: var(--ods9);
+}
+.ods10 {
+  background-color: var(--ods10);
+}
+.ods11 {
+  background-color: var(--ods11);
+}
+.ods12 {
+  background-color: var(--ods12);
+}
+.ods13 {
+  background-color: var(--ods13);
+}
+.ods14 {
+  background-color: var(--ods14);
+}
+.ods15 {
+  background-color: var(--ods15);
+}
+.ods16 {
+  background-color: var(--ods16);
+}
+.ods17 {
+  background-color: var(--ods17);
+}
+
+.ods1-color {
+  color: var(--ods1);
+}
+.ods2-color {
+  color: var(--ods2);
+}
+.ods3-color {
+  color: var(--ods3);
+}
+.ods4-color {
+  color: var(--ods4);
+}
+.ods5-color {
+  color: var(--ods5);
+}
+.ods6-color {
+  color: var(--ods6);
+}
+.ods7-color {
+  color: var(--ods7);
+}
+.ods8-color {
+  color: var(--ods8);
+}
+.ods9-color {
+  color: var(--ods9);
+}
+.ods10-color {
+  color: var(--ods10);
+}
+.ods11-color {
+  color: var(--ods11);
+}
+.ods12-color {
+  color: var(--ods12);
+}
+.ods13-color {
+  color: var(--ods13);
+}
+.ods14-color {
+  color: var(--ods14);
+}
+.ods15-color {
+  color: var(--ods15);
+}
+.ods16-color {
+  color: var(--ods16);
+}
+.ods17-color {
+  color: var(--ods17);
+}
+
+/* configurações de tags padroes */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbfaf0;
+  color: #2d2c2c;
+  font-size: 18px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fbfaf0;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #2d2c2c;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding-top: 50px;
+  position: relative;
+}
+
+/* Animação de fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+article {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 1em;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/*será usado para molde em todos os ods*/
+.ods {
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+/* primeira sessão */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: 50px;
+}
+
+.titulo-container {
+  display: flex;
+  align-items: center;
+}
+
+.ods-logo-main {
+  margin-right: 20px;
+  width: 280px;
+  height: auto;
+}
+
+.titulo-main {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* section "o que são?" */
+.o-que-sao {
+  height: 70vh;
+}
+
+.o-que-sao-conteudo {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.o-que-sao-conteudo p {
+  margin: 10px 0;
+  line-height: 2;
+  text-align: center;
+}
+
+.o-que-sao h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* section "conheça quais são" */
+
+.titulo-os-ods {
+  text-align: center;
+  font-size: 40px;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.articles-ods {
+  margin-top: 20px;
+}
+
+.ods-article-titulo {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 29px;
+  text-align: center;
+  font-weight: 800;
+  color: #fbfaf0;
+}
+
+/* modal dos ods*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  scrollbar-width: none;
+}
+
+.modal-content {
+  background-color: #f7f6f4;
+  padding: 20px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90vh;
+  width: 80%;
+  overflow-y: auto;
+}
+
+.modal-active {
+  display: block;
+}
+
+.close {
+  position: fixed;
+  top: 10px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.ods-descricao {
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.ods-simbolo {
+  width: 200px;
+  height: auto;
+  align-self: center;
+}
+
+.ods-conteudo {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.metas-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.metas-lista li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+}

@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .titulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .o-que-sao {
+    margin-bottom: 350px;
+  }
+
+  .ods-logo-main {
+    margin-bottom: 10px;
+  }
+
+  .ods-article-titulo {
+    font-size: 1.2em;
+  }
+
+  .titulo-centro {
+    font-size: 30px;
+  }
+
+  .o-que-sao-conteudo {
+    width: 90%;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .titulo-centro-sections {
+    font-size: 1.5em;
+  }
+
+  .close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .ods-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ods-simbolo {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-centro {
+    font-size: 24px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .ods-logo-main {
+    width: 150px;
+  }
+
+  .o-que-sao h2 {
+    font-size: 32px;
+  }
+}

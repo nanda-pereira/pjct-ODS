@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Objetivos de Desenvolvimento Sustentável</title>
+  </head>
+
+  <body id="body">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#o-que-sao">O que são?</a></li>
+          <li><a href="#os-ods">Os ODS</li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- primeira sessão  -->
+      <section class="fade-in main">
+        <div class="titulo-container">
+          <img
+            src="img/ods-todas-logo.png"
+            alt="Logo ODS"
+            class="ods-logo-main"
+          />
+          <h1 class="titulo-main">
+            Objetivos de Desenvolvimento Sustentável
+          </h1>
+        </div>
+      </section>
+
+      <section class="o-que-sao" id="o-que-sao">
+        <h2>O que são?</h2>
+        <div class="o-que-sao-conteudo">
+          <p>
+            As ODS (Objetivos de Desenvolvimento Sustentável) são uma agenda global proposta pela ONU com 17 objetivos que visam promover o desenvolvimento sustentável em diversas áreas. 
+          </p>
+          <p>
+            Cada um dos 17 objetivos possui metas específicas, totalizando 169 metas a serem alcançadas pelos países signatários.          
+          </p>
+          <p>
+            A iniciativa envolve governos, sociedade civil, setor privado e cidadãos, enfatizando a importância da colaboração e 
+            da responsabilidade coletiva na implementação de soluções para os desafios globais. 
+          </p>
+          <p>   
+            As ODS são um chamado à ação para 
+            construir um mundo mais equitativo, resiliente e sustentável, garantindo que ninguém fique para trás.
+          </p>
+        </div>
+      </section>
+
+      <section id="os-ods">
+        <h2 class="titulo-os-ods">Conheça quais são</h2>
+        <div class="overlay" style="display: none"></div>
+
+        <div class="articles-ods">
+
+        <!-- ods 01 -->
+        <article onclick="openModal('modal1')" class="ods ods1">
+          <h3 class="ods-article-titulo">1 Erradicação da Pobreza</h3>
+          <!--inicio do modal-->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal1')">&times;</span>
+              <header>
+                <h2>Objetivo 1</h2>
+                <h3 class="ods1-color">Erradicação da Pobreza</h3>
+              </header>
+              <div class="ods-conteudo ods1">
+                <div class="ods-descricao ods1">
+                  <p>
+                    A ODS "Erradicação da Pobreza" é um objetivo que abrange a eliminação da pobreza em todas as suas dimensões, reconhecendo-a como um dos maiores desafios globais e uma condição que afeta o desenvolvimento humano, a dignidade e os direitos básicos.
+                  </p>
+                  <p>
+                    Esse objetivo não apenas trata da falta de renda, mas também de outras necessidades essenciais como segurança alimentar, acesso à saúde, educação, moradia e saneamento.
+                  </p>
+                  <p>
+                    A meta central é assegurar que todos, em especial os mais vulneráveis, possam viver de maneira digna e tenham oportunidades de melhorar suas condições de vida, promovendo assim uma sociedade mais justa e inclusiva.
+                  </p>
+                </div>
+                <img
+                  src="img/ods1-simbolo.png"
+                  alt="Simbolo ODS 1"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Erradicar a pobreza extrema para todas as pessoas, medida como pessoas vivendo com menos de US$ 1,25 por dia.
+                </li>
+                <li>
+                  Reduzir pelo menos pela metade a proporção de homens, mulheres e crianças de todas as idades que vivem na pobreza, em todas as suas dimensões, segundo as definições nacionais.
+                </li>
+                <li>
+                  Implementar sistemas de proteção social adequados e amplos para todos, incluindo mínimos sociais, e alcançar uma cobertura substancial dos pobres e vulneráveis.
+                </li>
+                <li>
+                  Assegurar que todos os homens e mulheres, especialmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, assim como o acesso a serviços básicos, propriedade e controle sobre a terra e outras formas de propriedade.
+                </li>
+                <li>
+                  Construir resiliência dos pobres e das pessoas em situação vulnerável e reduzir a sua exposição e vulnerabilidade a eventos extremos relacionados ao clima e outros choques econômicos, sociais e ambientais.
+                </li>
+              </ul>
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(1); event.stopPropagation()" class="ods ods2">
+                <h3 class="ods-article-titulo">2 Fome Zero</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ods 02 -->
+        <article onclick="openModal('modal2')" class="ods ods2">
+          <h3 class="ods-article-titulo">2 Fome Zero</h3>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+              <header>
+                <h2>Objetivo 2</h2>
+                <h3 class="ods2-color">Fome Zero</h3>
+              </header>
+              <div class="ods-conteudo ods2">
+                <div class="ods-descricao ods2">
+                  <p>
+                    Busca erradicar a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável
+                  </p>
+                  <p> 
+                    Esse objetivo visa garantir o acesso de todas as pessoas, especialmente as mais vulneráveis, a uma alimentação adequada e nutritiva durante todo o ano, além de apoiar práticas agrícolas que respeitem o meio ambiente, aumentem a produtividade e gerem renda para pequenos produtores.
+                  </p>
+                  <p>
+                    A meta é criar um sistema alimentar resiliente que beneficie a saúde das populações e a sustentabilidade dos recursos naturais.
+                  </p>
+                </div>
+                <img
+                  src="img/ods2-simbolo.png"
+                  alt="Simbolo ODS 2"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Acabar com a fome e garantir o acesso a alimentos seguros, nutritivos e suficientes para todas as pessoas, especialmente para os mais vulneráveis, durante todo o ano.
+                </li>
+                <li>Acabar com todas as formas de desnutrição, incluindo alcançar as metas globais sobre desnutrição infantil e atender às necessidades nutricionais de adolescentes, grávidas, lactantes e pessoas idosas.</li>
+                <li>
+                  Dobrar a produtividade agrícola e a renda de pequenos produtores de alimentos, especialmente mulheres, povos indígenas, agricultores familiares, pastores e pescadores, através de um acesso seguro e igualitário a recursos produtivos e insumos.
+                </li>
+                <li>
+                  Garantir sistemas de produção sustentável de alimentos e implementar práticas agrícolas resilientes que aumentem a produtividade e a produção, contribuindo para a adaptação às mudanças climáticas e eventos climáticos extremos.
+                </li>
+                <li>
+                  Manter a diversidade genética de sementes, plantas cultivadas e animais de criação e domesticados e promover o acesso justo aos benefícios derivados da utilização dos recursos genéticos e conhecimentos tradicionais.
+                </li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(2); event.stopPropagation()" class="ods ods3">
+                <h3 class="ods-article-titulo">3 Saúde e Bem-Estar</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ods 03 -->
+        <article onclick="openModal('modal3')" class="ods ods3">
+          <h3 class="ods-article-titulo">3 Saúde e Bem-Estar</h3>
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal3')">&times;</span>
+              <header>
+                <h2>Objetivo 3</h2>
+                <h3 class="ods3-color">Saúde e Bem-Estar</h3>
+              </header>
+              <div class="ods-conteudo ods3">
+                <div class="ods-descricao ods3">
+                  <p>
+                    Busca assegurar uma vida saudável e promover o bem-estar para todas as pessoas, em todas as idades.
+                  </p>
+                  <p>
+                    Este objetivo envolve a melhoria da saúde pública e o acesso universal a cuidados de saúde de qualidade, com especial foco na redução das taxas de mortalidade materna e infantil, controle de doenças transmissíveis e não transmissíveis, saúde mental e promoção de estilos de vida saudáveis.
+                  </p>
+                  <p>
+                    Além disso, busca fortalecer a capacidade de resposta a emergências de saúde e o acesso a medicamentos e vacinas seguros e acessíveis para todos.
+                  </p>
+                </div>
+                <img
+                  src="img/ods3-simbolo.png"
+                  alt="Simbolo ODS 3"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>Reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos.</li>
+                <li>Acabar com as mortes evitáveis de recém-nascidos e crianças menores de 5 anos, reduzindo a mortalidade neonatal e infantil.</li>
+                <li>Combater epidemias de doenças como AIDS, tuberculose, malária e doenças tropicais negligenciadas e combater doenças transmissíveis.</li>
+                <li>Reduzir em um terço as mortes prematuras por doenças não transmissíveis e promover a saúde mental e o bem-estar.
+</li>
+                <li>Fortalecer a prevenção e o tratamento de abusos de substâncias, incluindo abuso de drogas e álcool.</li>
+                <li>Garantir o acesso universal a serviços de saúde sexual e reprodutiva e direitos reprodutivos.</li>
+                <li>Alcançar cobertura universal de saúde, incluindo proteção contra riscos financeiros e acesso a serviços de saúde essenciais de qualidade e a medicamentos e vacinas essenciais acessíveis.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(3); event.stopPropagation();" class="ods ods4">
+                <h3 class="ods-article-titulo">4 Educação de Qualidade</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ods 04 -->
+        <article onclick="openModal('modal4')" class="ods ods4">
+          <h3 class="ods-article-titulo">4 Educação de Qualidade</h3>
+
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal4')">&times;</span>
+              <header>
+                <h2>Objetivo 4</h2>
+                <h3 class="ods4-color">Educação de Qualidade</h3>
+              </header>
+              <div class="ods-conteudo ods4">
+                <div class="ods-descricao ods4">
+                  <p>
+                    Visa garantir o acesso equitativo e inclusivo a uma educação de qualidade, promovendo oportunidades de aprendizagem ao longo da vida para todos. 
+                  </p>
+                  <p>
+                    Esse objetivo reconhece que uma educação acessível, de qualidade e adaptada às necessidades do século XXI é essencial para o desenvolvimento sustentável, a redução da desigualdade e a construção de sociedades mais justas e resilientes. 
+                  </p>
+                  <p>
+                    Ele enfatiza não apenas o acesso à educação, mas também a melhoria dos resultados de aprendizagem, a formação de professores e a construção de ambientes de aprendizado seguros e inclusivos.
+                  </p>
+                </div>
+                <img
+                  src="img/ods4-simbolo copy.png"
+                  alt="Simbolo ODS 4"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>Garantir que todas as crianças completem o ensino primário e secundário de qualidade, levando a resultados de aprendizagem relevantes e eficazes.</li>
+                <li>Assegurar que todos tenham acesso a uma educação pré-escolar de qualidade, promovendo o desenvolvimento integral na primeira infância.</li>
+                <li>Aumentar o acesso igualitário ao ensino técnico, profissionalizante e superior, incluindo universidade, para todos os homens e mulheres.</li>
+                <li>Eliminar disparidades de gênero na educação e garantir acesso igualitário para pessoas vulneráveis, incluindo pessoas com deficiência, povos indígenas e crianças em situação de vulnerabilidade.</li>
+                <li>Aumentar o número de jovens e adultos com habilidades relevantes para o emprego e o empreendedorismo, promovendo a formação continuada e a capacitação.</li>
+                <li>Assegurar que todos os alunos adquiram conhecimentos e habilidades para promover o desenvolvimento sustentável, como igualdade de gênero, cultura de paz, cidadania global e valorização da diversidade cultural.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(4); event.stopPropagation();" class="ods ods5">
+                <h3 class="ods-article-titulo">5 Igualdade de Gênero</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+        <!-- ODS 05 -->
+        <article onclick="openModal('modal5')" class="ods ods5">
+          <h3 class="ods-article-titulo">5 Igualdade de Gênero</h3>
+
+          <div id="modal5" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal5')">&times;</span>
+              <header>
+                <h2>Objetivo 5</h2>
+                <h3 class="ods5-color">Igualdade de Gênero</h3>
+              </header>
+              <div class="ods-conteudo ods5">
+                <div class="ods-descricao ods5">
+                  <p>
+                    Busca alcançar a igualdade de gênero e empoderar todas as mulheres e meninas.
+                  </p>
+                  <p>
+                  Este objetivo reconhece que a igualdade de gênero é fundamental para o desenvolvimento sustentável e que a eliminação da discriminação e da violência baseada no gênero é essencial para garantir a plena participação das mulheres em todos os aspectos da vida social, econômica e política.
+                  </p>
+                  <p>
+                   Visa garantir o acesso a recursos e oportunidades, promover a liderança feminina e eliminar práticas nocivas que afetam as mulheres e meninas.
+                  </p>
+                </div>
+                <img
+                  src="img/ods5-simbolo copy.png"
+                  alt="Simbolo ODS 5"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Acabar com todas as formas de discriminação contra todas as mulheres e meninas em toda parte, garantindo igualdade de direitos e oportunidades.
+                </li>
+                <li>
+                  Eliminar todas as formas de violência contra mulheres e meninas, incluindo o tráfico e a exploração sexual.
+                </li>
+                <li>
+                  Eliminar práticas nocivas, como casamento infantil e mutilação genital feminina.
+                </li>
+                <li>
+                  Reconhecer e valorizar o trabalho de cuidado não remunerado e promover a responsabilidade compartilhada em relação a esse trabalho.
+                </li>
+                <li>
+                  Garantir a participação plena e efetiva das mulheres e a igualdade de liderança em todos os níveis de tomada de decisão em esferas políticas, econômicas e públicas.
+                </li>
+                <li>
+                Adotar e fortalecer políticas e legislações que promovam a igualdade de gênero e o empoderamento de todas as mulheres e meninas.
+                </li>
+                <li>
+                Garantir o acesso universal à saúde sexual e reprodutiva e aos direitos reprodutivos, promovendo a educação e o empoderamento das mulheres.
+                </li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(5); event.stopPropagation()" class="ods ods6">
+                <h3 class="ods-article-titulo">6 Água Potável e Saneamento</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 06 -->
+        <article onclick="openModal('modal6')" class="ods ods6">
+          <h3 class="ods-article-titulo">6 Água Potável e Saneamento</h3>
+
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal6')">&times;</span>
+              <header>
+                <h2>Objetivo 6</h2>
+                <h3 class="ods6-color">Água Potável e Saneamento</h3>
+              </header>
+              <div class="ods-conteudo ods6">
+                <div class="ods-descricao ods6">
+                  <p>
+                    Busca garantir a disponibilidade e a gestão sustentável da água e do saneamento para todos.
+                  </p>
+                  <p>Este objetivo reconhece a água como um recurso vital para a saúde, o bem-estar e o desenvolvimento sustentável, além de ser essencial para a produção de alimentos, a proteção do meio ambiente e a promoção da saúde pública.</p>
+                  <p>Visa assegurar que todas as pessoas tenham acesso a água potável segura e a serviços de saneamento adequados, além de promover a gestão integrada dos recursos hídricos.</p>
+                </div>
+                <img
+                  src="img/ods6-simbolo copy.png"
+                  alt="Simbolo ODS 6"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Garantir o acesso universal e equitativo à água potável segura e acessível para todos até 2030.
+                </li>
+                <li>
+                  Garantir o acesso a serviços de saneamento e higiene adequados e equitativos para todos, com ênfase especial na vulnerabilidade de mulheres e meninas.
+                </li>
+                <li>
+                  Melhorar a qualidade da água reduzindo a poluição, minimizando o despejo de produtos químicos e materiais perigosos, e aumentando a reciclagem e a reutilização segura da água.
+                </li>
+                <li>Aumentar a eficiência do uso da água em todos os setores para garantir a sustentabilidade da oferta de água.</li>
+                <li>Implementar a gestão integrada dos recursos hídricos em todos os níveis, incluindo a transfronteiriça, para garantir a água e o saneamento sustentáveis.</li>
+                <li>Proteger e restaurar os ecossistemas relacionados à água, como montanhas, florestas, zonas úmidas, rios e lagos, para garantir a sustentabilidade dos recursos hídricos.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(6); event.stopPropagation()" class="ods ods7">
+                <h3 class="ods-article-titulo">7 Energia Acessível e Limpa</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 07 -->
+        <article onclick="openModal('modal7')" class="ods ods7">
+          <h3 class="ods-article-titulo">7 Energia Acessível e Limpa</h3>
+
+          <div id="modal7" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal7')">&times;</span>
+              <header>
+                <h2>Objetivo 7</h2>
+                <h3 class="ods7-color">Energia Acessível e Limpa</h3>
+              </header>
+              <div class="ods-conteudo ods7">
+                <div class="ods-descricao ods7">
+                  <p>
+                    Busca garantir o acesso à energia acessível, confiável, sustentável e moderna para todos.
+                  </p>
+                  <p>Este objetivo reconhece a energia como um motor fundamental para o desenvolvimento econômico e social, permitindo melhorias na qualidade de vida, impulsionando o crescimento industrial e contribuindo para a mitigação das mudanças climáticas.</p>
+                  <p>Visa promover a eficiência energética e aumentar a proporção de energia renovável na matriz energética global.</p>
+                </div>
+                <img
+                  src="img/ods7-simbolo copy.png"
+                  alt="Simbolo ODS 7"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Garantir o acesso universal a serviços de energia acessíveis, confiáveis e modernos para todos até 2030.
+                </li>
+                <li>
+                 Aumentar substancialmente a proporção de energia renovável na matriz energética global até 2030, promovendo fontes de energia limpas e sustentáveis.
+                </li>
+                <li>Dobrar a taxa global de melhoria da eficiência energética até 2030, promovendo práticas e tecnologias que aumentem a eficiência no uso da energia.</li>
+                <li>Promover o investimento em infraestrutura e tecnologias de energia sustentável, especialmente em países em desenvolvimento, para garantir acesso à energia e melhorar a qualidade dos serviços.</li>
+                <li>Facilitar o acesso a pesquisas e tecnologias de energia sustentável, incluindo a promoção de cooperação internacional para a pesquisa e desenvolvimento de tecnologias energéticas.</li>
+                <li>Aumentar a capacidade de geração de energia de fontes renováveis, aumentando a geração de energia sustentável e acessível em regiões vulneráveis.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(7); event.stopPropagation()" class="ods ods8">
+                <h3 class="ods-article-titulo">8 Trabalho Decente e Crescimento Econômico</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 08 -->
+        <article onclick="openModal('modal8')" class="ods ods8">
+          <h3 class="ods-article-titulo">
+            8 Trabalho Decente e Crescimento Econômico
+          </h3>
+          <div id="modal8" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal8')">&times;</span>
+              <header>
+                <h2>Objetivo 8</h2>
+                <h3 class="ods8-color">
+                  Trabalho Decente e Crescimento Econômico
+                </h3>
+              </header>
+              <div class="ods-conteudo ods8">
+                <div class="ods-descricao ods8">
+                  <p>
+                    Visa promover o crescimento econômico sustentado, inclusivo e sustentável, além de garantir trabalho pleno e produtivo e o emprego digno para todos
+                  </p>
+                  <p>Este objetivo reconhece a importância do trabalho decente como um elemento central para o desenvolvimento humano e a redução da pobreza.</p>
+                  <p>busca não apenas fomentar o crescimento econômico, mas também assegurar que esse crescimento seja acompanhado pela criação de oportunidades de emprego, melhores condições de trabalho e a promoção dos direitos trabalhistas.</p>
+                </div>
+                <img
+                  src="img/ods8-simbolo copy.png"
+                  alt="Simbolo ODS 8"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Promover o crescimento econômico sustentado e per capita em termos reais, de acordo com as circunstâncias nacionais, e alcançar taxas de crescimento do PIB de pelo menos 7% ao ano nos países menos desenvolvidos.
+                </li>
+                <li>Aumentar a produtividade econômica por meio da diversificação, inovação e modernização tecnológica, promovendo a indústria e a criação de empregos de qualidade.</li>
+                <li>
+                  Proteger os direitos dos trabalhadores e promover ambientes de trabalho seguros e protegidos para todos os trabalhadores, incluindo migrantes e trabalhadores temporários.
+                </li>
+                <li>Promover políticas orientadas ao desenvolvimento que incentivem a atividade produtiva, a criação de empregos decentes e o trabalho digno, em especial para jovens, mulheres e pessoas com deficiência.</li>
+                <li>Promover o acesso a serviços financeiros, incluindo microfinanças, para todos, especialmente para pequenas e médias empresas, e ampliar o acesso a tecnologias da informação e comunicação.</li>
+                <li>Aumentar a proporção de jovens e adultos que têm habilidades para o emprego, trabalho decente e empreendedorismo, promovendo a educação e a formação profissional.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(8); event.stopPropagation()" class="ods ods9">
+                <h3 class="ods-article-titulo">9 Indústria, Inovação e Infraestrutura</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 09 -->
+        <article onclick="openModal('modal9')" class="ods ods9">
+          <h3 class="ods-article-titulo">
+            9 Indústria, Inovação e Infraestrutura
+          </h3>
+
+          <div id="modal9" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal9')">&times;</span>
+              <header>
+                <h2>Objetivo 9</h2>
+                <h3 class="ods9-color">Indústria, Inovação e Infraestrutura</h3>
+              </header>
+              <div class="ods-conteudo ods9">
+                <div class="ods-descricao ods9">
+                  <p>
+                    Possui como objetivo construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.
+                  </p>
+                  <p>Reconhece que a industrialização e a inovação são fundamentais para o crescimento econômico e a criação de empregos, além de serem essenciais para o desenvolvimento sustentável. </p>
+                  <p>Busca garantir que a infraestrutura seja acessível e de qualidade, promovendo a adoção de tecnologias limpas e sustentáveis.</p>
+                </div>
+                <img
+                  src="img/ods9-simbolo copy.png"
+                  alt="Simbolo ODS 9"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Desenvolver infraestruturas de qualidade, confiáveis, sustentáveis e resilientes para apoiar o desenvolvimento econômico e o bem-estar humano, com foco especial nas comunidades vulneráveis.
+                </li>
+                <li>Promover a industrialização inclusiva e sustentável e, até 2030, aumentar substancialmente a participação da indústria no emprego e no PIB.</li>
+                <li>
+                 Aumentar o acesso das pequenas indústrias e empresas industriais a serviços financeiros, incluindo microfinanças, e apoiar a capacidade de inovação e desenvolvimento de produtos.
+                </li>
+                <li>Fomentar a pesquisa e a inovação, aumentar o número de pesquisadores e investimento em pesquisa e desenvolvimento por meio de uma maior colaboração entre universidades, instituições de pesquisa e o setor privado.</li>
+                <li>Reforçar a infraestrutura e a capacidade tecnológica dos setores industrial e de serviços, promovendo a resiliência e a sustentabilidade das pequenas e médias empresas.</li>
+                <li>Promover o desenvolvimento de tecnologias sustentáveis, facilitando o acesso a informações e conhecimentos relacionados a tecnologias, especialmente para países em desenvolvimento.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(9); event.stopPropagation()" class="ods ods10">
+                <h3 class="ods-article-titulo">10 Redução das Desigualdades</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 10 -->
+        <article onclick="openModal('modal10')" class="ods ods10">
+          <h3 class="ods-article-titulo">10 Redução das Desigualdades</h3>
+          <div id="modal10" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal10')">&times;</span>
+              <header>
+                <h2>Objetivo 10</h2>
+                <h3 class="ods10-color">Redução das Desigualdades</h3>
+              </header>
+              <div class="ods-conteudo ods10">
+                <div class="ods-descricao ods10">
+                  <p>
+                    Possui como objetivo reduzir a desigualdade dentro dos países e entre eles.
+                  </p>
+                  <p>Este objetivo reconhece que a desigualdade econômica e social é um obstáculo ao desenvolvimento sustentável e à construção de sociedades justas e coesas.</p>
+                  <p>Visa promover a inclusão social, o empoderamento e a igualdade de oportunidades para todos, independentemente de sua origem, gênero, etnia ou condição socioeconômica.</p>
+                </div>
+                <img
+                  src="img/ods10-simbolo copy.png"
+                  alt="Simbolo ODS 10"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>Reduzir a desigualdade de renda entre os 40% mais pobres e os 10% mais ricos da população, promovendo políticas que garantam uma distribuição mais equitativa da renda.</li>
+                <li>
+                  Promover a inclusão social, econômica e política de todas as pessoas, independentemente de idade, gênero, deficiência, raça ou etnia, origem nacional ou religiosa, status econômico ou outra condição.
+                </li>
+                <li>
+                 Garantir a igualdade de oportunidades e reduzir as desigualdades de resultado, promovendo o acesso a serviços essenciais, como saúde, educação e serviços financeiros.
+                </li>
+                <li>Adotar políticas, em nível nacional e internacional, que apoiem a inclusão e a redução das desigualdades, especialmente em relação a grupos vulneráveis e marginalizados.</li>
+                <li>Melhorar a regulação e monitoramento das instituições financeiras e do mercado de trabalho, garantindo proteção e direitos para todos os trabalhadores.</li>
+                <li>Facilitar a mobilidade social e promover a integração de imigrantes e refugiados, combatendo a discriminação e promovendo a diversidade.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(10); event.stopPropagation()" class="ods ods11">
+                <h3 class="ods-article-titulo">11 Cidades e Comunidades Sustentáveis</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 11 -->
+        <article onclick="openModal('modal11')" class="ods ods11">
+          <h3 class="ods-article-titulo">
+            11 Cidades e Comunidades Sustentáveis
+          </h3>
+          <div id="modal11" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal11')">&times;</span>
+              <header>
+                <h2>Objetivo 11</h2>
+                <h3 class="ods11-color">Cidades e Comunidades Sustentáveis</h3>
+              </header>
+              <div class="ods-conteudo ods11">
+                <div class="ods-descricao ods11">
+                  <p>
+                    Busca tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis
+                  </p>
+                  <p>Este objetivo reconhece que mais da metade da população mundial vive em áreas urbanas, e a urbanização rápida apresenta desafios significativos em termos de habitação, infraestrutura, transporte e meio ambiente.</p>
+                  <p>Visa promover o planejamento urbano sustentável e a proteção do patrimônio cultural e natural, ao mesmo tempo em que garante o acesso a serviços básicos e a criação de ambientes urbanos seguros e saudáveis.</p>
+                </div>
+                <img
+                  src="img/ods11-simbolo copy.png"
+                  alt="Simbolo ODS 11"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Garantir o acesso a habitação segura, acessível e adequada e a serviços básicos para todos, com ênfase especial nas populações vulneráveis.
+                </li>
+                <li>
+                  Promover o transporte sustentável, aumentando a participação do transporte público e não motorizado, melhorando a segurança das estradas e reduzindo a poluição do ar nas cidades.
+                </li>
+                <li>Aumentar a urbanização inclusiva e sustentável e a capacidade de planejamento, com foco na redução do impacto ambiental das cidades e na criação de espaços públicos seguros e acessíveis.</li>
+                <li>Proteger e preservar o patrimônio cultural e natural, promovendo práticas sustentáveis de gerenciamento e conservação do patrimônio urbano.</li>
+                <li>Reduzir o número de mortes e o número de pessoas afetadas por desastres, com ênfase especial nas comunidades urbanas vulneráveis e no fortalecimento da resiliência urbana.</li>
+                <li>Aumentar a adoção de políticas e planos integrados de desenvolvimento urbano, promovendo a sustentabilidade e a inclusão social nas áreas urbanas.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(11); event.stopPropagation()" class="ods ods12">
+                <h3 class="ods-article-titulo">12 Consumo e Produção Responsáveis</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 12 -->
+        <article onclick="openModal('modal12')" class="ods ods12">
+          <h3 class="ods-article-titulo">12 Consumo e Produção Responsáveis</h3>
+
+          <div id="modal12" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal12')">&times;</span>
+              <header>
+                <h2>Objetivo 12</h2>
+                <h3 class="ods12-color">Consumo e Produção Responsáveis</h3>
+              </header>
+              <div class="ods-conteudo ods12">
+                <div class="ods-descricao ods12">
+                  <p>
+                   Visa garantir padrões de consumo e de produção sustentáveis.
+                  </p>
+                  <p>Este objetivo reconhece que a forma como produzimos e consumimos bens e serviços tem um impacto significativo no meio ambiente e no desenvolvimento econômico.</p>
+                  <p>Busca promover práticas que minimizem os impactos negativos sobre o meio ambiente e a saúde humana, incentivando a eficiência dos recursos e a redução de resíduos ao longo de todo o ciclo de vida dos produtos.</p>
+                </div>
+                <img
+                  src="img/ods12-simbolo copy.png"
+                  alt="Simbolo ODS 12"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                 Implementar o Programa de 10 anos sobre Consumo e Produção Sustentáveis em todos os países, com foco na redução do uso de recursos e da geração de resíduos.
+                </li>
+                <li>
+                  Reduzir pela metade o desperdício de alimentos per capita global até 2030, promovendo práticas que melhorem a eficiência do sistema alimentar.
+                </li>
+                <li>Aumentar a reciclagem e a reutilização de materiais em níveis global, nacional e local, promovendo a gestão sustentável dos resíduos.</li>
+                <li>Promover práticas de consumo sustentável e estilos de vida, incentivando a educação e a conscientização sobre os impactos das escolhas de consumo.</li>
+                <li>Aumentar a eficiência dos recursos e promover o desenvolvimento sustentável e a sustentabilidade em indústrias e empresas.</li>
+                <li>Promover o uso sustentável de recursos naturais, reduzindo a exploração e a degradação dos ecossistemas, garantindo que a exploração de recursos não comprometa a sustentabilidade futura.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(12); event.stopPropagation()" class="ods ods13">
+                <h3 class="ods-article-titulo">13 Ação Contra a Mudança Global do Clima</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 13 -->
+        <article onclick="openModal('modal13')" class="ods ods13">
+          <h3 class="ods-article-titulo">
+            13 Ação Contra a Mudança Global do Clima
+          </h3>
+
+          <div id="modal13" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal13')">&times;</span>
+              <header>
+                <h2>Objetivo 13</h2>
+                <h3 class="ods13-color">
+                  Ação Contra a Mudança Global do Clima
+                </h3>
+              </header>
+              <div class="ods-conteudo ods13">
+                <div class="ods-descricao ods13">
+                  <p>
+                    Possui como objetivo promover medidas urgentes para combater as mudanças climáticas e seus impactos.
+                  </p>
+                  <p>Este objetivo reconhece que as mudanças climáticas representam uma das maiores ameaças ao desenvolvimento sustentável, afetando a segurança alimentar, o acesso à água, a saúde humana e a biodiversidade.</p>
+                  <p>Busca fortalecer a resiliência e a capacidade de adaptação a riscos relacionados ao clima, além de integrar ações de combate às mudanças climáticas nas políticas e estratégias nacionais.</p>
+                </div>
+                <img
+                  src="img/ods13-simbolo copy.png"
+                  alt="Simbolo ODS 13"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                  Fortalecer a resiliência e a capacidade de adaptação a riscos relacionados ao clima e desastres naturais em todos os países.
+                </li>
+                <li>
+                  Incorporar medidas relacionadas à mudança do clima nas políticas, estratégias e planejamentos nacionais de desenvolvimento sustentável.
+                </li>
+                <li>
+                 Melhorar a educação, a conscientização e a capacitação sobre a mudança do clima e seus impactos, promovendo a sensibilização pública sobre a importância da ação climática.
+                </li>
+                <li>Mobilizar significativamente a comunidade internacional para apoiar países em desenvolvimento no fortalecimento da capacidade de adaptação e mitigação das mudanças climáticas.</li>
+                <li>Promover mecanismos de redução de emissões, como o comércio de emissões e outras ferramentas financeiras que incentivem a transição para uma economia de baixo carbono.</li>
+                <li>Reforçar a implementação do Acordo de Paris e outras iniciativas internacionais que visem reduzir as emissões de gases de efeito estufa e limitar o aumento da temperatura global.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(13); event.stopPropagation()" class="ods ods14">
+                <h3 class="ods-article-titulo">14 Vida na Água</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 14 -->
+        <article onclick="openModal('modal14')" class="ods ods14">
+          <h3 class="ods-article-titulo">14 Vida na Água</h3>
+          <div id="modal14" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal14')">&times;</span>
+              <header>
+                <h2>Objetivo 14</h2>
+                <h3 class="ods14-color">Vida na Água</h3>
+              </header>
+              <div class="ods-conteudo ods14">
+                <div class="ods-descricao ods14">
+                  <p>
+                    Tem como objetivo conservar e utilizar de forma sustentável os oceanos, os mares e os recursos marinhos para o desenvolvimento sustentável. 
+                  </p>
+                  <p>Este objetivo reconhece a importância dos oceanos para a vida no planeta, pois eles desempenham um papel crucial na regulação do clima, na manutenção da biodiversidade e no sustento de milhões de pessoas que dependem dos recursos marinhos.</p>
+                  <p>Busca proteger os ecossistemas marinhos e costeiros, promovendo práticas de pesca sustentável e a redução da poluição nos oceanos.</p>
+                </div>
+                <img
+                  src="img/ods14-simbolo copy.png"
+                  alt="Simbolo ODS 14"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>Prevenir e reduzir a poluição marinha de todos os tipos, especialmente a que provém de atividades terrestres, e reduzir a acidificação dos oceanos.</li>
+                <li>
+                  Proteger e restaurar os ecossistemas marinhos e costeiros para promover sua resiliência e contribuir para a conservação da biodiversidade.
+                </li>
+                <li>
+                  Gerir de forma sustentável a sobrepesca, a pesca ilegal e a pesca não regulamentada, garantindo a conservação das populações de peixes e a saúde dos oceanos.
+                </li>
+                <li>Aumentar o conhecimento científico e a transferência de tecnologia relacionada aos oceanos e à biodiversidade marinha, promovendo a pesquisa e a inovação na área.</li>
+                <li>Promover a conservação das áreas marinhas, com foco na criação de áreas marinhas protegidas e na gestão sustentável dos recursos marinhos.</li>
+                <li>Proteger a biodiversidade marinha e costeira, garantindo a conservação dos habitats e a proteção das espécies ameaçadas.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(14); event.stopPropagation()" class="ods ods15">
+                <h3 class="ods-article-titulo">15 Vida Terrestre</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 15 -->
+        <article onclick="openModal('modal15')" class="ods ods15">
+          <h3 class="ods-article-titulo">15 Vida Terrestre</h3>
+
+          <div id="modal15" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal15')">&times;</span>
+              <header>
+                <h2>Objetivo 15</h2>
+                <h3 class="ods15-color">Vida Terrestre</h3>
+              </header>
+              <div class="ods-conteudo ods15">
+                <div class="ods-descricao ods15">
+                  <p>
+                   Tem como objetivo proteger, restaurar e promover o uso sustentável dos ecossistemas terrestres, manejar de forma sustentável as florestas, combater a desertificação, interromper a degradação da terra e deter a perda de biodiversidade.
+                  </p>
+                  <p>Este objetivo reconhece que os ecossistemas terrestres são essenciais para a sobrevivência humana e a saúde do planeta, fornecendo serviços vitais como a purificação do ar e da água, a fertilidade do solo e a regulação do clima.</p>
+                  <p>Busca garantir que os recursos naturais sejam geridos de forma responsável e que a biodiversidade seja preservada para as gerações futuras.</p>
+                </div>
+                <img
+                  src="img/ods15-simbolo copy.png"
+                  alt="Simbolo ODS 15"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>Proteger, restaurar e promover o uso sustentável dos ecossistemas terrestres, gerindo de forma sustentável as florestas, combatendo a desertificação e interrompendo a degradação da terra e a perda de biodiversidade.</li>
+                <li>Assegurar a conservação das áreas terrestres e marinhas e a gestão sustentável dos recursos naturais, com ênfase especial nas florestas e nos habitats naturais.</li>
+                <li>Combater a desertificação, restaurar terras degradadas e preservar a biodiversidade, garantindo o uso sustentável das terras e dos recursos hídricos.</li>
+                <li>Aumentar a área de terras e florestas protegidas, promovendo a restauração de ecossistemas e a proteção da diversidade biológica.</li>
+                <li>Promover a pesquisa e a divulgação de informações sobre biodiversidade, incentivando a educação e a conscientização sobre a importância da proteção da vida terrestre.</li>
+                <li>Fomentar medidas para a conservação de espécies ameaçadas e seus habitats, assegurando a proteção de fauna e flora em risco de extinção.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(15); event.stopPropagation()" class="ods ods16">
+                <h3 class="ods-article-titulo">16 Paz, Justiça e Instituições Eficazes</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 16 -->
+        <article onclick="openModal('modal16')" class="ods ods16">
+          <h3 class="ods-article-titulo">
+            16 Paz, Justiça e Instituições Eficazes
+          </h3>
+          <div id="modal16" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal16')">&times;</span>
+              <header>
+                <h2>Objetivo 16</h2>
+                <h3 class="ods16-color">
+                  Paz, Justiça e Instituições Eficazes
+                </h3>
+              </header>
+              <div class="ods-conteudo ods16">
+                <div class="ods-descricao ods16">
+                  <p>
+                   Possui como objetivo promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, garantir o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.
+                  </p>
+                  <p>Este objetivo reconhece que a paz, a segurança e a justiça são fundamentais para o desenvolvimento e que a violência e a corrupção têm um impacto negativo nas sociedades.</p>
+                  <p>Busca fortalecer a governança e promover a participação cidadã, criando condições que favoreçam a construção de sociedades mais justas e equitativas.</p>
+                </div>
+                <img
+                  src="img/ods16-simbolo copy.png"
+                  alt="Simbolo ODS 16"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>Reduzir significativamente todas as formas de violência e taxas de mortalidade em todo o mundo, promovendo a segurança e a proteção de pessoas e comunidades.</li>
+                <li>Acabar com a violência, a tortura e outras formas de tratamento ou punição cruel, desumana ou degradante, promovendo os direitos humanos e a dignidade humana.</li>
+                <li>Promover o Estado de Direito em nível nacional e internacional e garantir a igualdade de acesso à justiça para todos, fortalecendo as instituições judiciais.</li>
+                <li>Reduzir a corrupção e a suborno em todas as suas formas, promovendo a transparência e a responsabilidade nas instituições.</li>
+                <li>Promover instituições inclusivas e eficazes em todos os níveis, assegurando a participação da população na tomada de decisões e na governança.</li>
+                <li>Promover a responsabilidade pública e a participação em processos decisórios, fortalecendo o envolvimento da sociedade civil e das comunidades na formulação de políticas.</li>
+              </ul>
+
+              <!-- redirecionar para a próxima ods -->
+              <div onclick="proximoODS(16); event.stopPropagation()" class="ods ods17">
+                <h3 class="ods-article-titulo">17 Parcerias e Meios de Implementação</h3>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ODS 17 -->
+        <article onclick="openModal('modal17')" class="ods ods17">
+          <h3 class="ods-article-titulo">
+            17 Parcerias e Meios de Implementação
+          </h3>
+
+          <div id="modal17" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal17')">&times;</span>
+              <header>
+                <h2>Objetivo 17</h2>
+                <h3 class="ods17-color">Parcerias e Meios de Implementação</h3>
+              </header>
+              <div class="ods-conteudo ods17">
+                <div class="ods-descricao ods17">
+                  <p>
+                    Tem como objetivo fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável. 
+                  </p>
+                  <p>Este objetivo reconhece que a colaboração entre países, setores e partes interessadas é essencial para alcançar as ODS.</p>
+                  <p>Busca promover uma abordagem integrada e multidimensional para enfrentar os desafios globais, facilitando o acesso a recursos financeiros, transferência de tecnologia e construção de capacidades, além de incentivar a troca de conhecimento e experiências entre países.</p>
+                </div>
+                <img
+                  src="img/ods17-simbolo copy.png"
+                  alt="Simbolo ODS 17"
+                  class="ods-simbolo"
+                />
+              </div>
+              <h2>Metas</h2>
+              <ul class="metas-lista">
+                <li>
+                 Mobilizar recursos financeiros significativos de diversas fontes, incluindo ajuda oficial ao desenvolvimento, investimentos diretos estrangeiros e outras formas de financiamento, para apoiar o desenvolvimento sustentável.
+                </li>
+                <li>Aumentar a capacidade de mobilização de recursos internos, promovendo o investimento em iniciativas de desenvolvimento sustentável em todos os países.</li>
+                <li>
+                 Promover a cooperação internacional para apoiar os países em desenvolvimento na implementação das ODS, incluindo a transferência de tecnologia e conhecimento.
+                </li>
+                <li>Aumentar a produção e o uso de dados, estatísticas e informações de alta qualidade para apoiar a formulação de políticas e o monitoramento do progresso em direção às ODS.</li>
+                <li>Aumentar a participação e o envolvimento de diferentes partes interessadas, incluindo governos, setor privado, sociedade civil e cidadãos, na implementação das ODS e na promoção do desenvolvimento sustentável.</li>
+                <li>Fortalecer as parcerias globais para a promoção do comércio e o acesso aos mercados, facilitando o desenvolvimento de políticas comerciais que contribuam para o desenvolvimento sustentável.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        </div>
+       </section>
+    </main>
+    <footer id="sobre">
+      <p>Desenvolvido por <strong>TecnaTech</strong></p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
